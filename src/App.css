@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #331831;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +35,166 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  height: 70px;
+  width: 99.8vw;
+  background-color: #000000;
+  border: 1px solid white;
+  position: sticky;
+  top: 0%;
+  font-size: 20px;
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.navbar p{
+  margin: 20px 30px 0px 0px ;
+  color:rgb(255, 255, 255);
+}
+
+.link{
+  text-decoration: none;
+
+}
+.icon{
+      font-size: 35px;
+}
+
+.table{
+  margin: auto;
+  margin-top: 50px;
+  width: 80%;
+  border: 2px solid rgb(221, 221, 221);
+  
+}
+.table td,th{
+  border-bottom: 2px solid rgb(221, 221, 221);
+  padding: 10px;
+}
+.table-h{
+  background-color: rgb(221, 221, 221);
+  color: #050505;
+}
+.act{
+  /* border: 1px solid rgb(0, 0, 0); */
+  /* padding: 20px; */
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.e{
+  background-color: rgb(0, 118, 253);
+  color: white;
+  width: 70px !important;
+  height: 42px !important;
+  padding: 10px;
+  margin-right: 10px;
+}
+.d{
+  background-color: rgb(253, 215, 0);
+  color: rgb(0, 0, 0);
+  width: 70px !important;
+  height: 42px !important;
+  outline: none;
+  border: none;
+  padding: 15px;
+}
+.search{
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  padding: 0px 5px 0px 5px;
+  margin-top: 120px;
+  /* background-color: rgb(221, 221, 221); */
+  outline: none;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 2px;
+
+}
+.add-h{
+  width:735px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 120px;
+  text-align: left;
+  font-family:'Courier New', Courier, monospace;
+}
+.foam{
+  /* border: 1px solid; */
+  width: 750px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.foam input{
+  /* width: 300px; */
+  height: 50px;
+  font-size: 20px;
+  padding: 0px 5px 0px 5px;
+  margin-top: 5px;
+  /* background-color: rgb(221, 221, 221); */
+  outline: none;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 5px;
+
+}
+.but{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 174, 255);
+}
+
+.water{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: #7ac502;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: inset 0 0 20px 0 rgba(0,0,0,.8),0 0 20px rgba(0,0,0,.3);
+  overflow: hidden;
+}
+.water:before,.water:after{
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: 50%;
+  background: #fff;
+}
+.water:before{
+  border-radius: 45%;
+  background: #fff;
+  animation: wave 5s linear infinite;
+}
+.water:after{
+  content: 'Add User';
+  border-radius: 35%;
+  background: rgba(255,255 , 255, 0.3);
+  animation: wave 5s linear infinite;
+}
+@keyframes wave{
+  0%{
+    transform: translate(-50%, -50%) rotate(0);
+    top: -30%;
+  }
+  5%{
+    top: -30%;
+  }
+  100%{ transform: translate(-50%, -50%) rotate(360deg);
+    top: -30%;
+
   }
 }
